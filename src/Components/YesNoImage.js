@@ -31,8 +31,17 @@ class YesNoImage extends React.Component{
 
     render(){
         return (
-            <div onClick={this.clickHandler}>
-            <p>{this.state.statement}</p>
+            <div style={{textAlign: "center"}} onClick={this.clickHandler}>
+            <p style={
+                {
+                    marginTop: "100px",
+                    borderStyle: "solid", 
+                    borderWidth: "2px", 
+                    display: "inline-block",
+                    padding: "10px"
+                    }
+                }>{this.state.statement}</p>
+            <br></br>
             <img src={this.state.image} alt="Drake Saying No"/>
             </div>
         )
