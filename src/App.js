@@ -1,7 +1,15 @@
 import React from 'react';
 import './App.css';
+import YesNoImage from './Components/YesNoImage'
+
+
+
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return (
+    <>
+    <YesNoImage />
+    </>
+  )
 }
 
 export default App;
